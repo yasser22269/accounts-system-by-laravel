@@ -31,15 +31,6 @@
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
-                        <label for="projectinput2">Name</label>
-                        <input type="text" id="projectinput1" class="form-control" placeholder="Enter name" name="name" value="{{ $admin->name }}">
-                        @error('name')
-                        <span class="text-danger"> {{$message}}</span>
-                        @enderror
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
                         <label for="projectinput2">Email</label>
                         <input type="text" id="projectinput2" class="form-control" placeholder="Email" name="email" value="{{ $admin->email }}">
                         @error('email')
@@ -77,14 +68,14 @@
                   </button>
                 </div>
               </form>
-        
+
           </div>
          </div>
 
 
          @endsection
 
- 
+
 
 
 

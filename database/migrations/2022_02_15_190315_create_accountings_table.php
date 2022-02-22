@@ -16,6 +16,7 @@ class CreateAccountingsTable extends Migration
         Schema::create('accountings', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('emp_id');
+            $table->integer('hours')->nullable();
             $table->tinyInteger('hours_flag');
             $table->dateTime('date_month');
             $table->timestamps();

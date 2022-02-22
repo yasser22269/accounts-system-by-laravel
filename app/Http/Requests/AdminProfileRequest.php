@@ -25,7 +25,6 @@ class AdminProfileRequest extends FormRequest
     {
         return [
             'email' => 'required|email|unique:admins,email,'.$this->id,
-            'name' => 'required',
             'password' => 'nullable|confirmed|min:8',
             'password_confirmation' => 'required_with:password|same:password'
         ];

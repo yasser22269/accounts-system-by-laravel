@@ -23,7 +23,6 @@ class ProfileController extends Controller
         try {
         DB::beginTransaction();
         $admin = Admin::findOrfail($id);
-        $admin->name = $request->name;
         $admin->email = $request->email;
         if (isset($request['password']) && $request['password'] != '') {
             $admin->password = bcrypt($request['password']);

@@ -11,6 +11,9 @@ class DepartmentSeeder extends Seeder
      */
     public function run()
     {
-        //
+        \App\Models\Department::create([
+            'name'  => 'devolopment',
+            'emp_id'  => 1,
+        ]);
     }
 }

@@ -16,7 +16,7 @@ class CreateHourPricesTable extends Migration
         Schema::create('hour_prices', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('price');
-            $table->dateTime('started_date');
+            $table->dateTime('started_date')->useCurrent();
             $table->dateTime('end_date')->nullable();
         });
     }

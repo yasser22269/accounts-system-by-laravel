@@ -26,7 +26,7 @@
         <ul class="nav navbar-nav float-right">
           <li class="dropdown dropdown-user nav-item">
             <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
-              <span class="mr-1">Hello, {{ auth('admin')->user()->name }}
+              <span class="mr-1">Hello, {{ auth('admin')->user()->employee->name }}
                 {{-- <span class="user-name text-bold-700"></span> --}}
                 <i class="la la-angle-down la-sm"></i>
               </span>
@@ -50,8 +50,8 @@
                 </h6>
                 <span class="notification-tag badge badge-default badge-danger float-right m-0 notification-counter">0 New</span>
               </li>
-            
-     
+
+
             </ul>
           </li>
 
